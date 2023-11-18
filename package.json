@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "delete:docs": "del docs",
-    "copy:dist": "copyfiles dist/country-app/* ./docs -f",
+    "copy:dist": "copyfiles dist/* ./docs -f",
     "build:github": "npm run delete:docs && npm run build && npm run copy:dist",
     "preview": "vite preview"
   },
