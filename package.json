@@ -1,0 +1,20 @@
+{
+  "name": "blackjack",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "delete:docs": "del docs",
+    "copy:dist": "copyfiles dist/country-app/* ./docs -f",
+    "build:github": "npm run delete:docs && npm run build && npm run copy:dist",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
+}
